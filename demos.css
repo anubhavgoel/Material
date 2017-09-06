@@ -68,3 +68,9 @@ section.example {
 section.example h2 {
   margin-left: 0;
 }
+
+.mdc-toolbar__section .mdc-toolbar__title{
+	      margin-left: 0px;
+    margin-right: 0px;
+    margin: auto;
+	  }
