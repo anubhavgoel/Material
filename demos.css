@@ -22,6 +22,7 @@
 :root {
   --mdc-theme-primary: #212121;
   --mdc-theme-accent: #64DD17;
+  --mdc-theme--secondary : #FF9800;
 }
 
 body {

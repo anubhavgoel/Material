@@ -37,6 +37,8 @@
       .demo-main {
         padding-left: 16px;
       }	
+	  
+	  
 	  .app-fab--absolute.app-fab--absolute {
   position: fixed;
   bottom: 1rem;
@@ -173,8 +175,7 @@
 </section>
     </section>
     <footer class="mdc-dialog__footer">
-      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--cancel">Decline</button>
-      <button type="button" class="mdc-button mdc-dialog__footer__button mdc-dialog__footer__button--accept">Accept</button>
+      <button class="mdc-button mdc-button--raised mdc-button--accent">Create Project</button>
     </footer>
   </div>
   <div class="mdc-dialog__backdrop"></div>
@@ -333,7 +334,7 @@ document.querySelector('.mdc-fab').addEventListener('click', function (evt) {
 })
 mdc.textfield.MDCTextfield.attachTo(document.querySelector('.mdc-textfield'));
 
-const select = new MDCSelect(document.querySelector('.mdc-select'));
+var select = new mdc.select.MDCSelect(document.querySelector('.mdc-select'));
 select.listen('MDCSelect:change', () => {
   alert(`Selected "${select.selectedOptions[0].textContent}" at index ${select.selectedIndex} ` +
         `with value "${select.value}"`);
